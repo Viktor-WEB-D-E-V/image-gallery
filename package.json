@@ -5,7 +5,9 @@
   "homepage": "https://Viktor-WEB-D-E-V.github.io/image-gallery",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /image-gallery/"
+    "build": "parcel build src/*.html --public-url /image-gallery/",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "repository": {
     "type": "git",
